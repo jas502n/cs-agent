@@ -46,6 +46,18 @@ public synchronized List<String> getVmArguments() {
         return this.vmArgs;
     }
 ```
+
+Patch:
+```
+// sun.management.VMManagementImpl#getVmArguments
+public synchronized List getVmArguments() {
+    ArrayList var1 = new ArrayList();
+    var1.add("-XX:+AggressiveHeap");
+    var1.add("-XX:+UseParallelGC");
+    return var1;
+}
+```
+
 Changed from [CSAgent](https://github.com/Twi1ight/CSAgent). review by [dust-life](https://github.com/dust-life).
 
 The key for 4.5 is not available here, Just a loader.
