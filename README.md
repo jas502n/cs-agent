@@ -48,7 +48,7 @@ public synchronized List<String> getVmArguments() {
 ```
 
 Patch:
-```
+```java
 // sun.management.VMManagementImpl#getVmArguments
 public synchronized List getVmArguments() {
     ArrayList var1 = new ArrayList();
