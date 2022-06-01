@@ -2,7 +2,7 @@
 
 CobaltStrike 4.0 - 4.5 Patch
 
-```
+```java
 private static final void A() {
     RuntimeMXBean var0 = ManagementFactory.getRuntimeMXBean();
     List var1 = var0.getInputArguments();
@@ -16,7 +16,7 @@ private static final void A() {
 }
 ```
 
-```
+```java
 // java.lang.management.RuntimeMXBean#getInputArguments
 public java.util.List<String> getInputArguments();
 
